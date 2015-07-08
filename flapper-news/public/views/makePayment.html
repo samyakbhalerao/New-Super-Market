@@ -1,0 +1,24 @@
+<div class="container-fluid">
+
+	<div class="col-xs-6">
+		<div class="panel panel-primary row">
+			<div class="panel-heading">Order Details</div>
+			<div class="panel-body">
+				<div class="well">
+					<span>Name : {{shippingData.name}}</span></br> <span>Address :
+						{{shippingData.street}}</span> </br>
+					<span>Total Amount : {{total()|currency:"&#8377;"}}</span></br> <span>Payment
+						Mode : {{shippingData.paymentType}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-6">
+		<div class="panel panel-success row">
+		<div class="panel-heading">Credit/Debit Card Payment</div>
+		<div class="panel-body">
+		Card Payment Form
+		</div>
+		</div>
+	</div>
+</div>

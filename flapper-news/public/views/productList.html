@@ -1,0 +1,34 @@
+<div class="panel panel-default row"
+	ng-controller="productListController" ng-hide="error">
+	<div class="col-xs-3">
+		<h3>
+			<label class="label label-primary"><strong>Categories</strong></label>
+		</h3>
+		<ul class="list-group">
+			<li class="btn btn-block btn-default btn-lg"
+				ng-click="selectCategory()"><strong>Home</strong></li>
+			<li class="btn btn-block btn-default btn-lg"
+				ng-repeat="category in products| orderBy:'category'|unique:'category'"
+				ng-click="selectCategory(category)"
+				ng-class="getCategoryClass(category)"><strong>{{category}}</strong></li>
+		</ul>
+	</div>
+	<div class="col-xs-8">
+		<h3>
+			<label class="label label-primary">Products</label>
+		</h3>
+		<ul class="list-group">
+			<li class="list-group-item list-group-item-success"
+				ng-repeat="product in products|filter:categoryFilterFn|range:selectedPage:pageSize"><strong>{{product.name}}:</strong>{{product.price|currency:"&#8377;"}}
+				</br>
+			<a class="btn btn-success pull-right"
+				ng-click="addProductToCart(product)">Add To cart</a> <span
+				class="lead">{{product.description}}({{product.category}})</span></li>
+		</ul>
+		<div class="pull-left btn-group">
+			<a class="btn btn-default"
+				ng-repeat="page in products|pageCount:pageSize|filter:categoryFilterFn"
+				ng-click="selectPage($index+1)" ng-class="getPageClass($index+1)">{{$index+1}}</a>
+		</div>
+	</div>
+</div>
