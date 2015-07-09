@@ -1,14 +1,9 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
 #map-canvas {
         width: 500px;
     height: 400px;
     background-color: #CCC;
 
-      }
+}
+.ng-invalid { background-color: lightpink; }
+.ng-valid { background-color: lightgreen; }
+span.error { color: red; font-weight: bold; }

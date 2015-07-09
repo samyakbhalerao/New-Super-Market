@@ -14,32 +14,26 @@
 <script type="text/javascript" src="/libs/bootstrap.min.js"></script>
 <script type="text/javascript" src="/libs/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="/libs/angular-mocks.js"></script>
-<script
-src="http://maps.googleapis.com/maps/api/js">
-</script>
+<script type="text/javascript" src="/libs/ngAutocomplete.js"></script>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
 <!-- internal js -->
 <script type="text/javascript" src="/javascripts/app.js"></script>
 <script type="text/javascript" src="src/js/config.js"></script>
 <script type="text/javascript" src="/javascripts/controller/supermarket.js"></script>
-<script type="text/javascript" src="/javascripts/component/cart.js"></script>
-<script type="text/javascript" src="/javascripts/component/cartDirective.js"></script>
+<script type="text/javascript" src="/javascripts/factory/cart.factory.js"></script>
+<script type="text/javascript" src="/javascripts/directive/cart/cartDirective.js"></script>
 <script type="text/javascript" src="/javascripts/filters/customfilter.js"></script>
-<script type="text/javascript"
-	src="/javascripts/controller/productListController.js"></script>
-<script type="text/javascript"
-	src="/javascripts/controller/cartSummaryController.js"></script>
-<script type="text/javascript"
-	src="/javascripts/controller/placeOrderController.js"></script>
-<script type="text/javascript"
-	src="/javascripts/controller/makePaymentController.js"></script>
+<script type="text/javascript"	src="/javascripts/controller/productListController.js"></script>
+<script type="text/javascript"	src="/javascripts/controller/cartSummaryController.js"></script>
+<script type="text/javascript"	src="/javascripts/controller/placeOrderController.js"></script>
+<script type="text/javascript"	src="/javascripts/controller/makePaymentController.js"></script>
 
 
 <!--External CSS -->
-<link href="/stylesheets/style.css" rel="stylesheet" />
-<link
-	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-	rel="stylesheet">
 
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="/stylesheets/style.css" rel="stylesheet" >
 </head>
 <body ng-controller="superMarketController">
 	<div class="container">

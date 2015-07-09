@@ -4,7 +4,7 @@
 (function(){
 	'use strict'
 	console.log("inside config.js");
-	var app=angular.module("superMarketApp",['cart','customFilter','ui.router']);
+	var app=angular.module("superMarketApp",['cart','customFilter','ui.router','ngAutocomplete']);
 	app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$sceProvider', function($stateProvider, $urlRouterProvider, $locationProvider, $sceProvider){
 		$urlRouterProvider.otherwise('products');
 		$stateProvider.state('products',{
