@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="eTOe" ng-controller="AppCtrl">
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <!-- social media tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@joshdmiller">
+    <meta name="twitter:title" content="ngBoilerplate">
+    <meta name="twitter:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+    <meta name="twitter:creator" content="@joshdmiller">
+    <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
+    <meta property="og:title" content="ngBoilerplate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://bit.ly/ngBoilerplate" />
+    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
+    <meta property="og:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--google maps-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/eTOe-0.0.1.css" />
+
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="vendor/angular/angular.js"></script>
+    <script type="text/javascript" src="vendor/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="vendor/angular-cookies/angular-cookies.js"></script>
+    <script type="text/javascript" src="vendor/angular-mocks/angular-mocks.js"></script>
+    <script type="text/javascript" src="vendor/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="vendor/angular-sanitize/angular-sanitize.js"></script>
+    <script type="text/javascript" src="vendor/angular-touch/angular-touch.js"></script>
+    <script type="text/javascript" src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-utils/ui-utils.js"></script>
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="src/app/app.js"></script>
+    <script type="text/javascript" src="src/app/customer/authentication/config/authentication.config.js"></script>
+    <script type="text/javascript" src="src/app/customer/authentication/controllers/authentication.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/core/config/customer.config.js"></script>
+    <script type="text/javascript" src="src/app/customer/core/controllers/customer.home.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/core/controllers/customer.js"></script>
+    <script type="text/javascript" src="src/app/customer/core/controllers/customer.restaurantdetails.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/dashboard/config/dashboard.config.js"></script>
+    <script type="text/javascript" src="src/app/customer/dashboard/controllers/dashboard.activity.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/dashboard/controllers/dashboard.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/dashboard/controllers/dashboard.coupons.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/dashboard/controllers/dashboard.history.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/dashboard/controllers/dashboard.reviews.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/order/config/order.config.js"></script>
+    <script type="text/javascript" src="src/app/customer/order/controllers/order.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/order/controllers/order.favourites.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/order/controllers/order.menu.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/order/controllers/order.modals.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/order/controllers/order.specials.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/restaurants/config/restaurants.config.js"></script>
+    <script type="text/javascript" src="src/app/customer/restaurants/controllers/restaurants.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/restaurants/controllers/restaurants.cusines.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/restaurants/controllers/restaurants.meals.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/restaurants/controllers/restaurants.restaurants_list.controller.js"></script>
+    <script type="text/javascript" src="src/app/customer/restaurants/controllers/restaurants.specials.controller.js"></script>
+    <script type="text/javascript" src="src/common/directives/availableFor/availablefor.js"></script>
+    <script type="text/javascript" src="src/common/directives/cart/cart.js"></script>
+    <script type="text/javascript" src="src/common/directives/dropdown/dropdown.js"></script>
+    <script type="text/javascript" src="src/common/directives/redeem/redeem.js"></script>
+    <script type="text/javascript" src="src/common/directives/searchbox/searchbox.js"></script>
+    <script type="text/javascript" src="src/common/directives/sortBy/sortby.js"></script>
+    <script type="text/javascript" src="src/common/filters/availableFor.filter.js"></script>
+    <script type="text/javascript" src="src/common/filters/cusineType.filter.js"></script>
+    <script type="text/javascript" src="src/common/filters/sortBy.filter.js"></script>
+    <script type="text/javascript" src="src/common/plusOne/plusOne.js"></script>
+    <script type="text/javascript" src="src/common/service/auth.Service.js"></script>
+    <script type="text/javascript" src="src/common/service/getData.Service.js"></script>
+    <script type="text/javascript" src="src/common/service/postData.service.js"></script>
+    <script type="text/javascript" src="src/common/service/shareData.Service.js"></script>
+    <script type="text/javascript" src="templates-common.js"></script>
+    <script type="text/javascript" src="templates-app.js"></script>
+
+    <!-- it's stupid to have to load it here, but this is for the +1 button -->
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+      { "parsetags": "explicit" }
+    </script>
+    <!--jquery-ui-->
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css"
+          rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"> </script>
+
+  </head>
+  <body>
+
+
+  <div ui-view="main"></div>
+
+
+  </body>
+</html>

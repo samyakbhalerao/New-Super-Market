@@ -1,0 +1,16 @@
+.tests-block {
+  padding-left: 60px;
+  width: 860px;
+}
+
+.test-item {
+  border: 5px solid black;
+  margin-bottom: 45px;
+  margin-top: 45px;
+  position: relative;
+  height: 140px;
+  width: 200px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=cusines.css.map */
